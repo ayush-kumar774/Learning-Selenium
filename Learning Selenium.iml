@@ -7,13 +7,26 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../External Jars/selenium-server-standalone-3.141.59.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../Java Resource Jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../Java Resource Jars" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../Java Resource Jars" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../Java Resource Jars" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
   </component>
