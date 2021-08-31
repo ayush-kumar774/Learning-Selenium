@@ -18,6 +18,9 @@ public class ReadingDataFromExcel {
         Row —> XSSFRow
         Cell —> XSSCell
 
+        getStringCellValue() -> used for string
+        getNumericCellValue() -> used for numbers
+
      */
     public static void main(String[] args) throws IOException {
         FileInputStream file = new FileInputStream("TESTFILE.xlsx");
@@ -33,8 +36,9 @@ public class ReadingDataFromExcel {
             XSSFRow currentRow = sheet.getRow(i);
             for (int j = 0 ; j < cellCount ; j++) {
                 String value = currentRow.getCell(j).toString();
-                System.out.println(value);
+                System.out.print(value + " ");
             }
+            System.out.println();
         }
     }
 }
